@@ -6,10 +6,10 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class PostService {
-// private url = 'https://jsonplaceholder.typicode.com/posts';
-//   constructor(private client : HttpClient) { }
+private url = 'https://jsonplaceholder.typicode.com/posts';
+  constructor(private client : HttpClient) { }
 
-// getPosts(){
-//   return this.client.get(this.url);
-// }
+getPosts(){
+  return this.client.get(this.url);
+}
 }
