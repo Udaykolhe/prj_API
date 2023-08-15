@@ -1,0 +1,11 @@
+Step 1 : Create New Project In angular 
+               ng new <Project-Name>
+Step 2 : Import HttpClientModule
+           -- src/app/app.module.ts
+//import { HttpClientModule } from "@angular/common/http";
+step 3 : Create service For API 
+           ng g s foldername/serviceName
+step 4 : use service to Component 
+             -src/app/app.component.ts
+step 5 :  Updated VIew File
+          -src/app/app.component.html 
