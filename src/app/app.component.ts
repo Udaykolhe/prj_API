@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PostService } from './services/post.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prj_API';
+posts:any;
+
+/**
+ *
+ */
+constructor(private post:PostService) {}
+ngOnInit(){
+  this.post.getPosts().subscribe(response =>{
+    this.posts = response;
+    console.log(this.posts);
+  })
+  
+}
+
 }
